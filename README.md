@@ -1,5 +1,5 @@
 # **Remove-Friends-Facebook**
-* **Removedor de `Amigos` no Facebook
+* **Removedor de `Amigos` no Facebook**
 ## **Instruções:**
 
 ### **1. Instale 🐍`Python` na sua máquina, por meio [deste link](https://www.python.org/)**
