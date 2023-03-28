@@ -1,5 +1,8 @@
 # **Remove-Friends-Facebook**
 * **Removedor de `Amigos` no Facebook**
+* **Aplicação baseada nas bibliotecas Tkinter e Selenium**
+* **Serviço de automação webdriver Chrome**
+
 ## **Instruções:**
 
 ### **1. Instale 🐍`Python` na sua máquina, por meio [deste link](https://www.python.org/)**
