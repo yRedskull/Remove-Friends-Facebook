@@ -1,5 +1,4 @@
 from time import sleep as sl
-import pygetwindow
 from pynput.keyboard import Controller, Key
 import pygetwindow as gw
 
