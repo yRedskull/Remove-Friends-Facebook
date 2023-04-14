@@ -3,7 +3,6 @@ from pynput.keyboard import Controller, Key
 import pygetwindow as gw
 
 
-# Class / Defs
 class Commands:
     def __init__(self):
         self.keyboard = Controller()
