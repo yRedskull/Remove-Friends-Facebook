@@ -11,12 +11,6 @@ class Interface:
     font_si = ('Inherit', 16)
 
     def __init__(self):
-        # Colors:
-        # Preto: #242526 / #202122
-        # Azul: #3982E4
-        # Branco: #E4E6EB
-
-        # Var
         self.cb_names = None
         self.frame = None
         self.list_names_nr = list()
@@ -44,10 +38,8 @@ Nenhum dos seus dados serão armazenados para fora do ambiente.
 Atenção: Você precisará ter o Google Chrome instalado em sua máquina
 para rodar esse programa."""
 
-        # Tela
         self.app = Tk()
 
-        # Pictures
         self.img_logo = PhotoImage(file='Image/logo.png').subsample(1)
         self.img_next = PhotoImage(file='Image/next.png').subsample(1)
         self.img_play = PhotoImage(file='Image/play.png').subsample(1)
@@ -55,12 +47,10 @@ para rodar esse programa."""
         self.img_add = PhotoImage(file='Image/add.png').subsample(1)
         self.img_remove = PhotoImage(file='Image/remove.png').subsample(1)
 
-        # Config
         self.app.title('Facebook - Remove Friends')
         self.app.configure(background='#242526')
         self.app.iconphoto(False, self.img_logo)
 
-        # Resolution
         self.width_screen = self.app.winfo_screenwidth()
         self.height_screen = self.app.winfo_screenheight()
         width_plus = int((600 * self.width_screen) / 1920)
@@ -68,7 +58,6 @@ para rodar esse programa."""
         self.app.geometry(f"600x400+{width_plus}+{height_plus}")
         self.app.resizable(False, False)
 
-        # Run
         self.tela_init()
 
         self.app.mainloop()
@@ -310,5 +299,5 @@ Respeitando letras MAIÚSCULAS, minúsculas e espaços.''', bg=bag, fg=fog, font
         else:
             return
 
-# Principal
-Interface()
+if __name__ == '__main__':
+    Interface()
