@@ -1,9 +1,9 @@
 from tkinter import *
 from tkinter.ttk import Combobox
-import os
 from tkinter import messagebox as mb
 from run import Run
 from time import sleep as sl
+import os
 # Class/Def
 class Interface:
     back_gr = '#242526'
