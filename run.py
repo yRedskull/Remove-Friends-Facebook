@@ -8,7 +8,6 @@ from selenium.webdriver.common.keys import Keys
 
 class Run:
     def __init__(self):
-        # Var
         self.html_find = None
         self.list_elements = None
         self.cmd = Commands()
@@ -16,9 +15,7 @@ class Run:
         self.nv = webdriver.Chrome(service=servico)
         self.nv.maximize_window()
         self.list_friends = list()
-        # lista com os nomes não retirados
         self.list_names = list()
-        # lista com os nomes retirados
         self.list_del_names = list()
 
     def get_page(self, url):
@@ -47,18 +44,15 @@ class Run:
                     continue
             sl(2)
 
-        # Abrindo site no navegador Chrome
         self.nv.get(url)
         sl(5)
 
-        # Esperando o usuário acessar sua conta no Facebook
         self.html_find = request_login()
         return season_scroll()
 
-    def desamigar(self, list_names_nr):  # url:endereço, list_names_nr: lista de nomes que não podem ser removidos
+    def desamigar(self, list_names_nr): 
         list_btn = self.nv.find_elements('class name',
                                          'xexx8yu.x4uap5.x18d9i69.xkhd6sd.x1n2onr6.x10w6t97.x1td3qas.xjbqb8w')
-        # Removendo o primeiro btn que não é de nenhuma pessoa
         list_btn.pop(0)
 
         print(len(self.list_elements))
