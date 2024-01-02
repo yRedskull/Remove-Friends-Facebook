@@ -9,7 +9,7 @@
 
 ### **2. Faça um clone [desse repositório](https://github.com/yRedskull/Fixation.git) na sua máquina:**
 
-* Crie uma pasta no seu computador para esse programa, recomendo colocar o nome **Fixation**<br>
+* Crie uma pasta no seu computador para esse programa, recomendo colocar o nome **Remove-Friends-Facebook**<br>
 * **Abra o `git bash` ou `terminal` dentro dessa pasta<br>**
 * Copie a [URL](https://github.com/yRedskull/Fixation.git) do repositório<br>
 * Digite `git clone <URL copiada>` e pressione `enter`<br>
